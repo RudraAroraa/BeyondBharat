@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+#product-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#product-list li {
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 1px solid #ccc;
+}
+/* Add this to styles.css */
+#image-section img {
+    max-width: 100%; /* Ensures image doesn't exceed the width of its container */
+    height: 500px; 
+    width: 500px;   /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto;  /* Centers the image horizontally */
+}
+/* General button styling */
+/* Product item styling */
+.product-item {
+    display: flex;             /* Use Flexbox for centering */
+    flex-direction: column;    /* Align items in a column */
+    align-items: left;       /* Center items horizontally */
+    justify-content: center;   /* Center items vertically */
+    margin-bottom: 20px;       /* Space between product items */
+    border: 1px solid #ddd;    /* Light border around each product */
+    padding: 15px;
+    position: relative;        /* Positioning context for absolute elements */
+    height: 300px;             /* Set a fixed height for centering */
+}
+
+/* General button styling */
+.shop-now-btn {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;              /* White text */
+    padding: 10px 20px;        /* Padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;           /* Font size */
+    margin-top: 10px;          /* Margin to separate from other elements */
+    cursor: pointer;
+    border-radius: 5px;        /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    position: absolute;        /* Absolute positioning for manual placement */
+    right: 50%;                /* Center horizontally */
+    transform: translateX(50%); /* Adjust horizontal center */
+    bottom: -500px;    
+    margin-top: 50px;          /* Move button lower by adjusting bottom value */
+}
+
+/* Button hover effect */
+.shop-now-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+.shop-now-btn {
+    position: absolute;
+    right: 200px; /* Align to the right */
+    bottom: 100px; 
+    /* Align to the bottom of the product item */
+}
+
+
+
+
